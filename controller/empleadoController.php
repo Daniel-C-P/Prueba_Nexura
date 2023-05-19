@@ -20,10 +20,11 @@
             return ($this->model->update($id,$nombre) != false) ? header("Location:show.php?id=".$id) : header("Location:index.php");
         }
         public function delete($id){
-            return ($this->model->delete($id)) ? header("Location:index.php") : header("Location:show.php?id=".$id) ;
+            return ($this->model->delete($id)) ? header("Location:/Prueba_nexura/index.php") : header("Location:show.php?id=".$id) ;
         }
-        public function obtenerColumnas(){
-            return ($this->model->obtenerColumnas()) ? $this->model->obtenerColumnas() : false;
+        
+        public function obtenerAreaEmpleado(){
+            return ($this->model->obtenerAreaEmpleado()) ? $this->model->obtenerAreaEmpleado() : false;
         }
     }
 

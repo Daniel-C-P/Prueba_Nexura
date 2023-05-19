@@ -8,7 +8,6 @@
     $nombre =  $_POST['nombre'];
 	$email =  $_POST['email'];
 	$sexo = $_POST['sexo'];
-    var_dump($sexo);
     
     $area_id = $_POST['area'];
     $descripcion = $_POST['descripcion']; 
@@ -56,9 +55,6 @@
         $empleado_rolObj->guardar($empleadoId,$rol8);
     }
 
-    for ($i=1; $i <9 ; $i++) { 
-        echo $i;
-    }
-
+    header("Location:/Prueba_nexura/index.php");
 
 ?>

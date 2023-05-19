@@ -18,11 +18,6 @@
             return ($stament->execute()) ? $this->PDO->lastInsertId() : false ;
 
         }
-        public function show($id){
-            $stament = $this->PDO->prepare("SELECT * FROM empleado where id = :id limit 1");
-            $stament->bindParam(":id",$id);
-            return ($stament->execute()) ? $stament->fetch() : false ;
-        }
         public function index(){
             $stament = $this->PDO->prepare("SELECT * FROM empleado");
             return ($stament->execute()) ? $stament->fetchAll() : false;
@@ -38,14 +33,11 @@
             $stament->bindParam(":id",$id);
             return ($stament->execute()) ? true : false;
         }
-        public function obtenerColumnas(){
+        public function obtenerAreaEmpleado(){
             $stament = $this->PDO->prepare(
-            "SELECT COLUMN_NAME AS columna, COLUMN_TYPE AS tipo
-            FROM information_schema.columns WHERE
-            table_schema = 'prueba_tecnica_dev'
-            AND table_name = 'empleado'"
+                "SELECT t1.id, t1.nombre, t1.email,t1.sexo, t2.nombre, t1.boletin FROM empleado t1 INNER JOIN areas t2 ON t1.area_id=t2.id"
             );
-            return ($stament->execute()) ? $stament->fetchAll(PDO::FETCH_OBJ) : false ;
+            return ($stament->execute()) ? $stament->fetchAll() : false ;
         }
     }
 

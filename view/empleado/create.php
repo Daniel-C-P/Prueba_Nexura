@@ -107,12 +107,9 @@
             <label for="staticEmail" class="col-sm-2 col-form-label"></label>
             <div class="col-sm-10">
                 <button type="submit" class="btn btn-primary">Guardar</button>
-                <a class="btn btn-danger" href="index.php">Cancelar</a>
+                <a class="btn btn-danger" href="/Prueba_Nexura/index.php">Cancelar</a>
             </div>
                     </div>
-        <?php
-        include("validar.php");
-        ?>
 </form>
 
 <?php
