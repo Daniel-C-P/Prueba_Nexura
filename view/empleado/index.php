@@ -1,11 +1,12 @@
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/head.php");
-    require_once("c://xampp/htdocs/proyecto/controller/usernameController.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/view/head/head.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/controller/usernameController.php");
     $obj = new usernameController();
+    echo($obj);
     $rows = $obj->index();
 ?>
 <div class="mb-3">
-    <a href="/proyecto/view/username/create.php" class="btn btn-primary">Agregar nuevo usuario</a>
+    <a href="/Prueba_Nexura/view/username/create.php" class="btn btn-primary">Agregar nuevo usuario</a>
 </div>
 <table class="table">
     <thead>
@@ -57,5 +58,5 @@
     </tbody>
 </table>
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/footer.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/view/head/footer.php");
 ?>

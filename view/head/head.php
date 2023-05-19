@@ -14,7 +14,7 @@
     <div class="container-fluid bg-dark p-2 mb-3">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/proyecto/index.php">Inicio</a>
+            <a class="navbar-brand" href="/Prueba_Nexura/index.php">Inicio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -22,11 +22,11 @@
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Username
+                    Empleado
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="/proyecto/view/username/index.php">Usuarios</a></li>
-                    <li><a class="dropdown-item" href="/proyecto/view/username/create.php">Agregar nuevos usuarios</a></li>
+                    <li><a class="dropdown-item" href="/Prueba_Nexura/">Empleados</a></li>
+                    <li><a class="dropdown-item" href="/Prueba_Nexura/view/empleado/create.php">Agregar Empleados</a></li>
                 </ul>
                 </li>
             </ul>

@@ -1,10 +1,10 @@
 <?php
-    class usernameController{
+    class areasController{
         private $model;
         public function __construct()
         {
-            require_once("c://xampp/htdocs/proyecto/model/usernameModel.php");
-            $this->model = new usernameModel();
+            require_once("c://xampp/htdocs/Prueba_Nexura/model/areasModel.php");
+            $this->model = new areasModel();
         }
         public function guardar($nombre){
             $id = $this->model->insertar($nombre);

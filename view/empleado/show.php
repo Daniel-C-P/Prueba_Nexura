@@ -1,6 +1,6 @@
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/head.php");
-    require_once("c://xampp/htdocs/proyecto/controller/usernameController.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/view/head/head.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/controller/usernameController.php");
     $obj = new usernameController();
     $date = $obj->show($_GET['id']);
 ?>
@@ -51,5 +51,5 @@
 
 
 <?php
-    require_once("c://xampp/htdocs/proyecto/view/head/footer.php");
+    require_once("c://xampp/htdocs/Prueba_Nexura/view/head/footer.php");
 ?>
